@@ -1,1 +1,145 @@
-Hello does this work? Let's see! Follow step by step... but you can type anything here.
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-red"><i class="fa fa-home w3-margin-right"></i>Braden G. Kane</a>
+  <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Assignments">Assignments<i class="fa fa-caret-down"></i></button>    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#week1" class="w3-bar-item w3-button">Week 1</a>
+      <a href="#week2" class="w3-bar-item w3-button">Week 2</a>
+      <a href="#week3" class="w3-bar-item w3-button">Week 3</a>
+    </div>
+  </div>
+  <a href="#final" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Final Project</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button">About</a>
+    <a href="#assignments" class="w3-bar-item w3-button">Assignments</a>
+    <a href="#final" class="w3-bar-item w3-button">Final Project</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+</div>
+
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-center" id="about">
+<h2>About</h2>
+<p>Welcome to the official website for Braden G. Kane. I am from Holyoke, Massachusetts and attend Wheaton College as a Film and New Media major. On this site, you will be keeping up with my journey into the world of digital fabrication. Enjoy!</p>
+
+<div class="w3-row"><br>
+</div>
+
+<!-- Assignment Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="assignments">
+
+<h2>Assignments</h2>
+<p>Find all of my assignments for each week of the 2021 fall semester here.</p>
+<div class="w3-quarter">
+<div class="w3-card w3-white"id="week1">
+  <img src="/w3images/snow.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>Week 1: Making a Website</h3>
+  <p>For the first week's assignment, our task was to curate our own website for our work.<p>
+  <br>
+<p> I started out by installing Visual Studio code, git using my terminal, and the brackets extension.<p>
+<br>
+<p> Next up was setting up the repository for my website through GitHub Pages. After some use of terminal, it was set up and ready for the next step. <p>
+<br>
+<p> Setting up the index.html Committing, Staging changes, and pushing. Had a little bit of diffculty nagivating through this step, but was able to pull through.<p>
+<br>
+<p> Moving along, the next step was finding a good template to use. I went on to the W3 school's website and found this one.<p>
+<br>
+<p> I made changes to the template via the Tryit Editor on W3's site until they were to my liking.<p>
+<br>
+<p>Finally, I copied the template code and pasted it into my index.html file on VSC. Now just time to commit and push!<p>
+
+
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white"id="week2">
+  <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Week 2</h3>
+  <p>Coming soon!</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white" id="week3">
+  <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>Week 3</h3>
+  <p>Coming soon!</p>
+  </div>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+<!-- Final Project -->
+<div class="w3-row-padding w3-center w3-padding-64" id="final">
+    <h2>Final Project</h2>
+    <p>(Currently Unavailable)</p><br>
+    </div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-red w3-bottombar">Contact Me</span></div>
+      <p><i class="fa fa-map-marker w3-text-red w3-xlarge"></i>  Norton, Ma</p>
+      <p><i class="fa fa-envelope-o w3-text-red w3-xlarge"></i>  kane_braden@wheatoncollege.edu</p>
+    </div>
+    
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
